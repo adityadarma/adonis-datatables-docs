@@ -5,7 +5,7 @@ You can look at src/engines/database_datatabe class which handles the conversion
 ## Via Service
 
 ```ts
-import datatables from '@adityadarma/adonis-datatables/datatables'
+import datatables from '@adityadarma/adonis-datatables/services/main'
 import DatabaseDataTable from '@adityadarma/adonis-datatables/engines/database_datatable'
 
 const users = db.from('users').select('*', db.raw("CONCAT(users.name,' ',users.email) as fullname"))
@@ -20,10 +20,10 @@ return await datatables.of<DatabaseDataTable>(users)
     .results()
 ```
 
-## Via Class Parent
+## Via Factory
 
 ```ts
-import Datatables from '@adityadarma/adonis-datatables/datatables'
+import { Datatables } from '@adityadarma/adonis-datatables'
 
 const users = db.from('users').select('*', db.raw("CONCAT(users.name,' ',users.email) as fullname"))
 return await Datatables.database(transactions)
@@ -37,7 +37,7 @@ return await Datatables.database(transactions)
     .results()
 ```
 
-## Via Class Engine
+## Via Engine
 
 ```ts
 import DatabaseDataTable from '@adityadarma/adonis-datatables/engines/database_datatable'

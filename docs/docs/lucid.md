@@ -5,7 +5,7 @@ You can look at src/engines/lucid_datatabe class which handles the conversion of
 ## Via Service
 
 ```ts
-import datatables from '@adityadarma/adonis-datatables/services/datatables'
+import datatables from '@adityadarma/adonis-datatables/services/main'
 import LucidDataTable from '@adityadarma/adonis-datatables/engines/lucid_datatable'
 
 const transactions = Transaction.query().preload('user')
@@ -18,10 +18,10 @@ return await datatables.of<LucidDataTable>(transactions)
     .results()
 ```
 
-## Via Class Parent
+## Via Factory
 
 ```ts
-import Datatables from '@adityadarma/adonis-datatables/datatables'
+import { Datatables } from '@adityadarma/adonis-datatables'
 
 const transactions = Transaction.query().preload('user')
 return await Datatables.lucid(transactions)
@@ -33,7 +33,7 @@ return await Datatables.lucid(transactions)
     .results()
 ```
 
-## Via Class Engine
+## Via Engine
 
 ```ts
 import LucidDataTable from '@adityadarma/adonis-datatables/engines/lucid_datatable'

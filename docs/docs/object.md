@@ -5,7 +5,7 @@ You can look at src/engines/object_datatabe class which handles the conversion o
 ## Via Service
 
 ```ts
-import datatables from '@adityadarma/adonis-datatables/services/datatables'
+import datatables from '@adityadarma/adonis-datatables/services/main'
 import ObjectDataTable from '@adityadarma/adonis-datatables/engines/object_datatable'
 
 const transactions = await Transaction.query().preload('user')
@@ -19,10 +19,10 @@ return await datatables.of<ObjectDataTable>(users)
     .rawColumns(['intro'])
     .results()
 ```
-## Via Class Parent
+## Via Factory
 
 ```ts
-import Datatables from '@adityadarma/adonis-datatables/datatables'
+import { Datatables } from '@adityadarma/adonis-datatables'
 
 const transactions = await Transaction.query().preload('user')
 return await Datatables.object(transactions)
@@ -36,7 +36,7 @@ return await Datatables.object(transactions)
     .results()
 ```
 
-## Via Class Engine
+## Via Engine
 
 ```ts
 import ObjectDataTable from '@adityadarma/adonis-datatables/engines/object_datatable'
