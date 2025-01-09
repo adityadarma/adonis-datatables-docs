@@ -59,7 +59,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/adityadarma/adonis-datatables' }
+      { icon: 'github', link: 'https://github.com/adityadarma' }
     ]
   },
   base: '/adonis-datatables-docs/'

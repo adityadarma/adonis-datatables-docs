@@ -4,22 +4,24 @@ layout: home
 
 hero:
   name: "Adonis Datatables"
-  text: "Package for easy managegement datatables"
-  tagline: My great project tagline
+  text: ""
+  tagline: Easy management server side datatable for AdonisJS Framework
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Installation
+      link: /docs
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: NPM Package
+      link: https://www.npmjs.com/package/@adityadarma/adonis-datatables
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Lucid Datatable
+    details: Use Lucid Model without await promise execute data
+    link: /docs/lucid
+  - title: Database Datatable
+    details: Use Database Class without await promise execute data
+    link: /docs/database
+  - title: Object Datatable
+    details: Use Lucid Model with await promise execute data return object data
+    link: /docs/object
 ---
-
