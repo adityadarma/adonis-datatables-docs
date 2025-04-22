@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Installation
-      link: /docs
+      link: /docs/installation
     - theme: alt
       text: NPM Package
       link: https://www.npmjs.com/package/@adityadarma/adonis-datatables

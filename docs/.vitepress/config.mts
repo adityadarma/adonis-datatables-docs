@@ -24,36 +24,37 @@ export default defineConfig({
         text: 'Datatables Class',
         collapsed: true,
         items: [
-          { text: 'Lucid', link: '/docs/lucid' },
-          { text: 'Database', link: '/docs/database' },
-          { text: 'Object', link: '/docs/object' },
+          { text: 'Lucid', link: '/docs/class/lucid' },
+          { text: 'Database', link: '/docs/class/database' },
+          { text: 'Object', link: '/docs/class/object' },
         ]
       },
       {
         text: 'Response',
         collapsed: true,
         items: [
-          { text: 'Lucid', link: '/docs/lucid' },
-          { text: 'Database', link: '/docs/database' },
-          { text: 'Object', link: '/docs/object' },
+          { text: 'Result Response', link: '/docs/response/result' },
+          { text: 'Additional Response', link: '/docs/response/additional' },
+          { text: 'Only Column', link: '/docs/response/only-column' },
         ]
       },
       {
         text: 'Column Editing',
         collapsed: true,
         items: [
-          { text: 'Lucid', link: '/docs/lucid' },
-          { text: 'Database', link: '/docs/database' },
-          { text: 'Object', link: '/docs/object' },
+          { text: 'Add Column', link: '/docs/column/add-column' },
+          { text: 'Edit Column', link: '/docs/column/edit-column' },
+          { text: 'Remove Column', link: '/docs/column/remove-column' },
+          { text: 'Index Column', link: '/docs/column/index-column' },
+          { text: 'Raw Column', link: '/docs/column/raw-column' },
         ]
       },
       {
-        text: 'Row Editing',
+        text: 'Searching',
         collapsed: true,
         items: [
-          { text: 'Lucid', link: '/docs/lucid' },
-          { text: 'Database', link: '/docs/database' },
-          { text: 'Object', link: '/docs/object' },
+          { text: 'Manual Search', link: '/docs/searching/manual-search' },
+          { text: 'Relationship', link: '/docs/searching/relationship' },
         ]
       }
     ],
